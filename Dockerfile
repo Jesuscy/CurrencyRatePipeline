@@ -1,11 +1,9 @@
-FROM apache/airflow:2.9.1-python3.9
+FROM apache/airflow:2.9.1-python3.10
 
-USER root
-# Instala dependencias del sistema si necesitas
-# RUN apt-get update && apt-get install -y libpq-dev gcc
+# Establece la carpeta de trabajo donde vive Airflow
+WORKDIR /opt/airflow
 
 USER airflow
 
-# Copia requirements si necesitas
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt /requirements.txt
+RUN pip install --no-cache-dir -r /requirements.txt
