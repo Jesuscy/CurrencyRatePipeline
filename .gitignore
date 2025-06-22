@@ -1,0 +1,25 @@
+# Variables de entorno con datos sensibles
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+
+# Directorios de caché
+.python-version
+.pytest_cache/
+.cache/
+
+# Archivos y carpetas de Docker (si tienes temporales)
+*.pid
+*.sock
+
+# Otros
+.vscode/
+.idea/
+.DS_Store
