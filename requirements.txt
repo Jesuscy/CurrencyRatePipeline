@@ -1,4 +1,4 @@
-apache-airflow-providers-databricks[all]==7.4.0
+apache-airflow-providers-databricks[all]==7.4.0 
 python-dotenv==1.1.0
 flask_appbuilder>=4.3.6
 
